@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <title>Online CV</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="StyleSheet.css" rel="stylesheet"> <!-- style sheet -->
 </head>
 <body>
-    <!--navigation-->
+    <!-- navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Online CV</a>
@@ -29,7 +30,59 @@
         </div>
     </nav>
 
-   
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Main info -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <!-- Profile info -->
+                <div class="card">
+                    <img src="profile.jpg" class="card-img-top" alt="Profile Picture">
+                    <div class="card-body">
+                        <h5 class="card-title">Christian Vestergaard</h5>
+                        <p class="card-text">I like making video games and tinkering with code/modding stuff into games.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <!-- Contact info -->
+                <h2>Contact Me</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="captcha" class="form-label">Skriv svaret på 2 + 3 i feltet herunder.</label>
+                        <input type="text" class="form-control" id="captcha" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- skole Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2>skoler jeg har vært til</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">hammerum skole</li>
+                    <li class="list-group-item">knudmoosen skole</li>
+                    <li class="list-group-item">aarhus skole</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="JavaScript.js"></script> <!-- Link til JavaScript fil -->
 </body>
 </html>
+
